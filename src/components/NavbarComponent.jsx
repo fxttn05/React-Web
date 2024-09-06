@@ -1,10 +1,26 @@
+import { useState, useEffect } from 'react'; 
 import {Navbar, Container, Nav} from 'react-bootstrap';
 import {navLinks} from '../data/index';
 import { NavLink } from 'react-router-dom';
 
 const NavbarComponent = () => {
+const [changeColor, setChageColor] = useState(false);
+
+const changeBackgroundColor = () => {
+  if(window.scrollY > 10){
+    setChageColor(true);
+  }else{
+    setChageColor(false);
+  }
+}
+
+useEffect(() =>{
+  changeBackgroundColor();
+
+  window.addEventListener('scroll', changeBackgroundColor)
+})
 return (
-<Navbar expand="lg">
+<Navbar expand="lg" className={changeColor ? "color-active" : ""}>
   <Container>
     <Navbar.Brand href="/" className='fs-3 fw-bold'>Ngoding.</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
