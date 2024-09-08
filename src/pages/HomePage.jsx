@@ -35,7 +35,7 @@ const HomePage = () => {
                 <button className="btn btn-outline-danger btn-lg rounded-1">Lihat Promo</button>
               </Col>
               <Col lg="6">
-                <img src={HeroImage} alt="hero-img" />
+                <img src={HeroImage} alt="hero-img" className="animate__animated animate__fadeInUp"/>
               </Col>
             </Row>
           </Container>
