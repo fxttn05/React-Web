@@ -135,7 +135,7 @@ const HomePage = () => {
         </div>
 
         {/* Faq Component */}
-        <Faq></Faq>
+        <Faq />
     </div>
   )
 }
