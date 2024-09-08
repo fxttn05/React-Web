@@ -52,7 +52,7 @@ const HomePage = () => {
             </Row>
             <Row>
               {kelasTerbaru.map((kelas) =>{
-                return <Col key={kelas.id} className="shadow rounded">
+                return <Col key={kelas.id} className="shadow rounded" data-aos="fade-up" data-aos-duration="400" data-aos-delay={kelas.delay}>
                     <img src={kelas.image} alt="unspalsh.com" className="rounded-top mb-5"/>
                     <div className="star mb-2 px-3">
                       <i className={kelas.star1}></i>
