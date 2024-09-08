@@ -20,7 +20,7 @@ function App() {
       <Route path='/SnK' Component={SKPage}/>
     </Routes>
 
-    {/* <FooterComponent /> */}
+    <FooterComponent />
   </div>
 }
 

@@ -1,6 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap"
 import HeroImage from "../assets/img/hero.png"
 
+import Faq from "../components/Faq";
+
 import { kelasTerbaru, dataSwiper } from "../data/index";
 import { useNavigate} from "react-router-dom";
 
@@ -21,6 +23,8 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
+      
+        {/* header */}
         <header className="w-100 min-vh-100 d-flex align-items-center">
           <Container>
             <Row className="header-box d-flex align-items-center pt-lg-5">
@@ -36,6 +40,8 @@ const HomePage = () => {
             </Row>
           </Container>
         </header>
+
+        {/* kelas terbaru */}
         <div className="kelas w-100 min-vh-100">
           <Container>
             <Row>
@@ -72,6 +78,8 @@ const HomePage = () => {
             </Row>
           </Container>
         </div>
+
+        {/* Testimonial */}
         <div className="testimonial py-5">
           <Container>
             <Row>
@@ -125,6 +133,9 @@ const HomePage = () => {
             </Row>
           </Container>
         </div>
+
+        {/* Faq Component */}
+        <Faq></Faq>
     </div>
   )
 }
