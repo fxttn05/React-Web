@@ -31,7 +31,7 @@ const HomePage = () => {
               <Col lg="6">
                 <h1 className="mb-4 ">Temukan <br /> <span>Bakat Kreatifmu</span> <br /> Bersama Kami</h1>
                 <p className="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, voluptates nemo voluptatum officia pariatur minima.</p>
-                <button className="btn btn-danger btn-lg rounded-1 me-2">Lihat Kelas</button>
+                <button className="btn btn-danger btn-lg rounded-1 me-2" onClick={() => navigate("kelas")}>Lihat Kelas</button>
                 <button className="btn btn-outline-danger btn-lg rounded-1">Lihat Promo</button>
               </Col>
               <Col lg="6">
