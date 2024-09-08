@@ -7,12 +7,12 @@ const FooterComponent = () => {
       <Container>
         <Row className="d-flex justify-content-between">
           <Col lg="5">
-            <h3 className="fw-bold">Ngoding.</h3>
+            <h3 className="fw-bold">AyoNgoding</h3>
             <p className="desc">Thank you for visiting this dummy website, don't forget to visit my LinkedIn and Instagram!</p>
             <div className="no mb-1 mt-4">
               <a href="https://fattanportofolio.framer.website/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                 <i className="fa-solid fa-globe"></i>
-                <p className="m-0">My Portfolio Website</p>
+                <p className="m-0">Fattan Portfolio Website</p>
               </a>
             </div>
             <div className="mail">
@@ -40,11 +40,11 @@ const FooterComponent = () => {
               <a href="https://www.linkedin.com/in/mohammad-fattan-hibrizi/" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
-              <a href="https://www.youtube.com/@Fattan20" target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-youtube"></i>
-              </a>
               <a href="https://github.com/fxttn05" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.youtube.com/@Fattan20" target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-youtube"></i>
               </a>
               <a href="https://wa.me/6281213521066" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-whatsapp"></i>
@@ -54,7 +54,7 @@ const FooterComponent = () => {
         </Row>
         <Row>
           <Col>
-            <p className=" text-center px-md-0 px-3">&copy; Copyright {new Date().getFullYear()} By <span className="fw-bold">Fattan Hibrizi</span>, All Right Reserved</p>
+            <p className=" text-center px-md-0 px-3">&copy; Copyright {new Date().getFullYear()} By <span className="fw-bold copyright"><a href="https://github.com/fxttn05" target="_blank" rel="noopener noreferrer">Fattan Hibrizi</a></span>, All Right Reserved</p>
           </Col>
         </Row>
       </Container>

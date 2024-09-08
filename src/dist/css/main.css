@@ -48,7 +48,7 @@
 
 /* style homepage header */
 
-header {
+.homepage header {
     background: #c6ffdd; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -296,7 +296,7 @@ header {
 }
 
 .testimonialpage .testimonial .people img{
-    width: 80px;
+    width: 60px;
     border-radius: 100%;
 }
 
@@ -362,8 +362,7 @@ header {
     column-gap: 10px;
 }
 
-.footer .no a:hover ,
-.footer .mail a:hover {
+.footer .no a:hover , .footer .mail a:hover , .footer .no p:hover , .footer .mail p:hover {
     color: var(--secondary-color);
 }
 
@@ -374,11 +373,12 @@ header {
 .footer .row:nth-child(1) .col:nth-child(2) a{
     color: black;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .footer .row:nth-child(1) .col:nth-child(2) a:hover{
     color: var(--secondary-color);
+    font-weight: 600;
 }
 
 .footer .subscribes{
@@ -403,6 +403,7 @@ header {
     font-size: 24px;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: black;
 }
 
 .footer .social i:hover{
@@ -411,4 +412,9 @@ header {
 
 .footer .row:nth-child(2){
     margin-top: 100px;
+}
+
+.footer .copyright a{
+    text-decoration: none;
+    color: var(--color-text);
 }

@@ -27,12 +27,12 @@ const HomePage = () => {
         {/* header */}
         <header className="w-100 min-vh-100 d-flex align-items-center">
           <Container>
-            <Row className="header-box d-flex align-items-center pt-lg-5">
+            <Row className="header-box d-flex align-items-center overflow-hidden">
               <Col lg="6">
                 <h1 className="mb-4 ">Temukan <br /> <span>Bakat Kreatifmu</span> <br /> Bersama Kami</h1>
-                <p className="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, voluptates nemo voluptatum officia pariatur minima.</p>
+                <p className="mb-4">Bersama AyoNgoding, anda akan mendapat pengalaman belajar seputar IT dengan mentor-mentor yang tak kalah keren!</p>
                 <button className="btn btn-danger btn-lg rounded-1 me-2" onClick={() => navigate("kelas")}>Lihat Kelas</button>
-                <button className="btn btn-outline-danger btn-lg rounded-1">Lihat Promo</button>
+                <button className="btn btn-outline-danger btn-lg rounded-1" onClick={() => navigate("kelas")}>Lihat Promo</button>
               </Col>
               <Col lg="6">
                 <img src={HeroImage} alt="hero-img" className="animate__animated animate__fadeInUp"/>
