@@ -7,7 +7,6 @@ import TestimonialPage from './pages/TestimonialPage'
 import NavbarComponent from './components/NavbarComponent'
 import FooterComponent from './components/FooterComponent'
 
-HomePage
 function App() {
   return <div>
     <NavbarComponent />
