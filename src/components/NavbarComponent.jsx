@@ -5,23 +5,29 @@ import { NavLink } from 'react-router-dom';
 
 const NavbarComponent = () => {
   const [changeColor, setChangeColor] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const changeBackgroundColor = () => {
-    if(window.scrollY > 10){
+    if (window.scrollY > 10 || (window.innerWidth < 1024 && isExpanded)) {
       setChangeColor(true);
-    }else{
+    } else {
       setChangeColor(false);
     }
   };
 
   useEffect(() => {
     changeBackgroundColor();
-
     window.addEventListener('scroll', changeBackgroundColor)
+    window.addEventListener("resize", changeBackgroundColor);
+
+    return () => {
+      window.removeEventListener("scroll", changeBackgroundColor);
+      window.removeEventListener("resize", changeBackgroundColor);
+    };
   });
 
   return (
-  <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
+  <Navbar expand="lg" className={changeColor ? "color-active" : ""} expanded={isExpanded} onToggle={() => setIsExpanded((prev) => !prev)}>
     <Container>
       <Navbar.Brand href="/" className='fs-3 fw-bold'>AyoNgoding</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

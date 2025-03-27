@@ -60,6 +60,10 @@
     color: var(--color-text);
 }
 
+.homepage .header-box button{
+    width: 9rem;
+}
+
 .homepage .header-box h1 span {
     font-weight: 700;
 }
@@ -80,7 +84,7 @@
     }
 
     .homepage .header-box img {
-        width: 400px;
+        max-width: 400px;
         display: block;
         margin-inline: auto;
     }
@@ -113,6 +117,7 @@
 .homepage .kelas .row:nth-child(2) .col{
     background-color: #ffffff;
     padding: 0;
+    width: 95vw;
 }
 
 .homepage .kelas .row:nth-child(2) img{
@@ -236,6 +241,7 @@
 .kelaspage .kelas .row:nth-child(2) .col{
     background-color: #ffffff;
     padding: 0;
+    width: 95vw;
 }
 
 .kelaspage .kelas .row:nth-child(2) img{
